@@ -11,9 +11,9 @@ import (
 
 func InitConfig() {
 	//默认配置文件
-	default_config_file := "data/config/config.ini"
+	default_config_file := "conf/config.ini"
 	//备用配置文件
-	backup_config_file := "data/config.ini"
+	backup_config_file := "config.ini"
 	var config_file string
 
 	//首先读取默认配置文件，如果不存在，则读取备用配置文件
