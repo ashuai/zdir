@@ -11,7 +11,7 @@ import (
 // 命令行初始化
 func InitConfig() {
 	//配置文件目录
-	config_dir := "data/config"
+	config_dir := "conf"
 	//配置文件路径
 	config_file := config_dir + "/config.ini"
 	//检查配置文件是否存在，如果存在了，则不进行初始化
@@ -126,7 +126,7 @@ func create_db_file() {
 	}
 
 	//数据库文件路径
-	db_file := "data/db/zdir.db3"
+	db_file := "conf/zdir.db3"
 	//判断文件是否存在，存在就不再创建
 	_, err := os.Stat(db_file)
 
